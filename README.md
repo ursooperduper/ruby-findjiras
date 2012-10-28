@@ -20,6 +20,6 @@ The first time you run the script, a CONFIG file (.findjiras.yaml) will be creat
 Usage
 -----
 This script was built as a way to grab Jiras that are referenced in git logs and format them into a list with the actual Jira summary and key. 
-
 For example: 
+
     git log deploy/20121025 ^deploy/20121024 --pretty=oneline | ~/code/ruby-findjiras/findjira.rb

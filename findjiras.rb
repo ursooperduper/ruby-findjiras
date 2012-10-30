@@ -26,7 +26,7 @@ if File.exists? CONFIG_FILE
   config_options = YAML.load_file(CONFIG_FILE)
   options.merge!(config_options)
 
-  if options[:username] == nil || options[:password] == nil
+  if options[:username] == nil || options[:password] == nil || options[:jira_url] == nil || options[:projects] == nil
     puts "\nPlease edit your config file to include your Jira username and password."
   else
     jiras = Array.new
